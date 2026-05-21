@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+    <title>Popular Art - Galería de Arte Contemporáneo</title>
+    <meta name="description" content="Popular Art - Galería de arte contemporáneo con pinturas, esculturas, fotografía y más. Descubre obras únicas de artistas emergentes y consolidados.">
+    <meta name="keywords" content="arte contemporáneo, pinturas, esculturas, fotografía, galería de arte, artistas, comprar arte">
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18164449273"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18164449273');
+</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      // Configuración del Google Tag base
+      gtag('config', 'AW-XXXXXXXXXX');
+      
+      // Enhanced Conversions - Consent Mode
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'wait_for_update': 500
+      });
+      
+      // Función para actualizar consentimiento cuando el usuario acepte
+      function updateConsent(consent) {
+        gtag('consent', 'update', {
+          'ad_storage': consent ? 'granted' : 'denied',
+          'analytics_storage': consent ? 'granted' : 'denied',
+          'ad_user_data': consent ? 'granted' : 'denied',
+          'ad_personalization': consent ? 'granted' : 'denied'
+        });
+      }
+    </script>
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+    <!-- Schema.org Structured Data para Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ArtGallery",
+      "name": "Popular Art",
+      "description": "Galería de arte contemporáneo con pinturas, esculturas, fotografía y más.",
+      "url": "https://www.popularart.com",
+      "telephone": "+1-234-567-8900",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle Arte 123",
+        "addressLocality": "Ciudad",
+        "addressRegion": "Región",
+        "postalCode": "12345",
+        "addressCountry": "ES"
+      },
+      "openingHours": "Mo-Fr 09:00-18:00 Sa 10:00-14:00",
+      "priceRange": "$$",
+      "image": "https://www.popularart.com/images/og-image.jpg"
+    }
+    </script>
+    
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Popular Art - Galería de Arte Contemporáneo">
+    <meta property="og:description" content="Descubre obras únicas de arte contemporáneo. Pinturas, esculturas, fotografía y más.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.popularart.com">
+    <meta property="og:image" content="https://www.popularart.com/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2D5A3D; --light-green: #7CB342; --soft-green: #A5D6A7;
+            --pale-green: #E8F5E9; --mint: #C8E6C9; --sage: #9CCC65;
+            --forest: #1B4332; --deep-forest: #0D2818; --white: #FFFFFF;
+            --off-white: #FAFBF7; --cream: #F5F5DC; --light-gray: #F0F4F0;
+            --medium-gray: #9E9E9E; --dark-gray: #424242; --charcoal: #212121;
+            --font-heading: 'Playfair Display', Georgia, serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --space-xs: 0.5rem; --space-sm: 1rem; --space-md: 1.5rem;
+            --space-lg: 2rem; --space-xl: 3rem; --space-xxl: 4rem;
+            --radius-sm: 8px; --radius-md: 12px; --radius-lg: 16px; --radius-full: 9999px;
+            --shadow-sm: 0 2px 8px rgba(45,90,61,0.08);
+            --shadow-md: 0 4px 16px rgba(45,90,61,0.12);
+            --shadow-lg: 0 8px 32px rgba(45,90,61,0.16);
+        }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        html { scroll-behavior: smooth; font-size: 16px; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; overflow-x: hidden; width: 100%; }
+        body { font-family: var(--font-body); color: var(--charcoal); background: var(--off-white); line-height: 1.6; overflow-x: hidden; width: 100%; min-height: 100vh; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
+        button { cursor: pointer; border: none; background: none; font-family: inherit; font-size: 1rem; touch-action: manipulation; }
+        ul { list-style: none; }
+        input, textarea, select { font-family: inherit; font-size: 16px !important; -webkit-appearance: none; appearance: none; border-radius: var(--radius-sm); }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 1rem; width: 100%; }
+        .section-padding { padding: 3rem 0; }
+        .text-center { text-align: center; }
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+        .header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(255,255,255,0.98); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(124,179,66,0.1); transition: all 0.3s ease; }
+        .header.scrolled { box-shadow: var(--shadow-md); }
+        .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; padding: 0 0.5rem; }
+        .logo { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--primary-green); display: flex; align-items: center; gap: 0.25rem; min-height: 48px; }
+        .logo span { color: var(--light-green); }
+        .nav-links { position: fixed; top: 64px; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,0.98); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 0; padding: 2rem 1rem; transform: translateX(100%); transition: transform 0.3s ease; z-index: 999; overflow-y: auto; }
+        .nav-links.active { transform: translateX(0); }
+        .nav-links a { font-size: 1.1rem; font-weight: 500; color: var(--dark-gray); padding: 1rem 0; width: 100%; text-align: center; border-bottom: 1px solid var(--light-gray); min-height: 48px; display: flex; align-items: center; justify-content: center; }
+        .nav-links a:last-child { border-bottom: none; }
+        .nav-actions { display: flex; align-items: center; gap: 0.5rem; }
+        .cart-btn { position: relative; width: 48px; height: 48px; border-radius: var(--radius-full); background: var(--pale-green); color: var(--primary-green); display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; }
+        .cart-btn:hover, .cart-btn:active { background: var(--soft-green); transform: scale(1.05); }
+        .cart-count { position: absolute; top: -2px; right: -2px; background: var(--light-green); color: white; font-size: 0.7rem; font-weight: 600; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; min-width: 22px; }
+        .mobile-menu-btn { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px; width: 48px; height: 48px; border-radius: var(--radius-sm); }
+        .mobile-menu-btn span { display: block; width: 24px; height: 2.5px; background: var(--primary-green); border-radius: 2px; transition: all 0.3s ease; }
+        .mobile-menu-btn.active span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+        .mobile-menu-btn.active span:nth-child(2) { opacity: 0; }
+        .mobile-menu-btn.active span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+        .cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: var(--charcoal); color: white; padding: 1rem; z-index: 9999; transform: translateY(100%); transition: transform 0.4s ease; max-height: 50vh; overflow-y: auto; }
+        .cookie-banner.show { transform: translateY(0); }
+        .cookie-banner-inner { max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; align-items: stretch; gap: 1rem; }
+        .cookie-banner p { font-size: 0.9rem; line-height: 1.5; }
+        .cookie-banner a { color: var(--soft-green); text-decoration: underline; }
+        .cookie-buttons { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+        .btn-cookie { padding: 0.875rem 1.5rem; border-radius: var(--radius-sm); font-size: 1rem; font-weight: 500; transition: all 0.3s ease; min-height: 48px; flex: 1; text-align: center; }
+        .btn-cookie-accept { background: var(--light-green); color: white; }
+        .btn-cookie-accept:hover, .btn-cookie-accept:active { background: var(--primary-green); }
+        .btn-cookie-decline { background: transparent; border: 1px solid rgba(255,255,255,0.3); color: white; }
+        .btn-cookie-decline:hover, .btn-cookie-decline:active { border-color: white; }
+
+        .hero { min-height: auto; padding: 5rem 0 2rem; display: flex; align-items: center; position: relative; background: linear-gradient(135deg, var(--pale-green) 0%, var(--mint) 50%, var(--cream) 100%); overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: -30%; right: -30%; width: 100%; height: 100%; background: radial-gradient(ellipse, rgba(124,179,66,0.08) 0%, transparent 70%); pointer-events: none; }
+        .hero-grid { display: flex; flex-direction: column; gap: 2rem; }
+        .hero-content { position: relative; z-index: 2; text-align: center; order: 2; }
+        .hero-tag { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(124,179,66,0.15); color: var(--primary-green); padding: 0.5rem 1rem; border-radius: var(--radius-full); font-size: 0.85rem; font-weight: 500; margin-bottom: 1rem; }
+        .hero-title { font-family: var(--font-heading); font-size: clamp(1.8rem, 6vw, 4rem); font-weight: 700; line-height: 1.15; color: var(--forest); margin-bottom: 1rem; word-wrap: break-word; }
+        .hero-title span { color: var(--light-green); position: relative; }
+        .hero-desc { font-size: 1rem; color: var(--dark-gray); max-width: 100%; margin-bottom: 1.5rem; line-height: 1.7; padding: 0 0.5rem; }
+        .hero-buttons { display: flex; flex-direction: column; gap: 0.75rem; align-items: center; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.875rem 1.5rem; border-radius: var(--radius-md); font-size: 1rem; font-weight: 600; transition: all 0.3s ease; min-height: 48px; width: 100%; max-width: 280px; }
+        .btn-primary { background: var(--primary-green); color: white; box-shadow: 0 4px 16px rgba(45,90,61,0.3); }
+        .btn-primary:hover, .btn-primary:active { background: var(--forest); transform: translateY(-2px); }
+        .btn-secondary { background: transparent; color: var(--primary-green); border: 2px solid var(--soft-green); }
+        .btn-secondary:hover, .btn-secondary:active { background: var(--pale-green); border-color: var(--light-green); }
+        .hero-visual { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; order: 1; max-width: 100%; }
+        .hero-img { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); }
+        .hero-img img { width: 100%; height: 180px; object-fit: cover; }
+        .hero-img:nth-child(2) { margin-top: 1.5rem; }
+        .hero-img:nth-child(3) { margin-top: -1rem; }
+
+        .categories { background: var(--white); }
+        .section-header { text-align: center; max-width: 600px; margin: 0 auto 2rem; padding: 0 0.5rem; }
+        .section-tag { display: inline-block; color: var(--light-green); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 0.5rem; }
+        .section-title { font-family: var(--font-heading); font-size: clamp(1.6rem, 5vw, 2.5rem); color: var(--forest); margin-bottom: 0.5rem; line-height: 1.2; }
+        .section-desc { color: var(--medium-gray); font-size: 1rem; line-height: 1.6; }
+        .categories-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+        .category-card { position: relative; border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 3/4; cursor: pointer; box-shadow: var(--shadow-sm); transition: all 0.4s ease; }
+        .category-card:hover, .category-card:active { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+        .category-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .category-card:hover img, .category-card:active img { transform: scale(1.05); }
+        .category-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(13,40,24,0.9) 0%, transparent 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 1rem; }
+        .category-name { font-family: var(--font-heading); font-size: 1.1rem; color: white; margin-bottom: 0.25rem; }
+        .category-count { color: rgba(255,255,255,0.8); font-size: 0.8rem; }
+
+        .featured { background: var(--off-white); }
+        .products-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+        .product-card { background: var(--white); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); transition: all 0.4s ease; border: 1px solid rgba(124,179,66,0.08); }
+        .product-card:hover, .product-card:active { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+        .product-img { position: relative; aspect-ratio: 4/5; overflow: hidden; }
+        .product-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .product-card:hover .product-img img, .product-card:active .product-img img { transform: scale(1.05); }
+        .product-badge { position: absolute; top: 0.75rem; left: 0.75rem; background: var(--light-green); color: white; padding: 0.35rem 0.75rem; border-radius: var(--radius-full); font-size: 0.7rem; font-weight: 600; text-transform: uppercase; }
+        .product-actions { position: absolute; bottom: 0.75rem; right: 0.75rem; display: flex; gap: 0.5rem; }
+        .product-action-btn { width: 44px; height: 44px; border-radius: 50%; background: white; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-md); color: var(--primary-green); transition: all 0.3s ease; }
+        .product-action-btn:hover, .product-action-btn:active { background: var(--primary-green); color: white; }
+        .product-info { padding: 1.25rem; }
+        .product-artist { color: var(--light-green); font-size: 0.85rem; font-weight: 500; margin-bottom: 0.25rem; }
+        .product-name { font-family: var(--font-heading); font-size: 1.15rem; color: var(--forest); margin-bottom: 0.5rem; line-height: 1.3; }
+        .product-meta { display: flex; justify-content: space-between; align-items: center; margin-top: 0.75rem; gap: 0.5rem; }
+        .product-price { font-size: 1.2rem; font-weight: 700; color: var(--primary-green); flex-shrink: 0; }
+        .product-price .original { font-size: 0.9rem; color: var(--medium-gray); text-decoration: line-through; margin-left: 0.5rem; font-weight: 400; }
+        .btn-add-cart { padding: 0.625rem 1rem; background: var(--pale-green); color: var(--primary-green); border-radius: var(--radius-full); font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease; min-height: 40px; white-space: nowrap; }
+        .btn-add-cart:hover, .btn-add-cart:active { background: var(--primary-green); color: white; }
+
+        .artists { background: linear-gradient(180deg, var(--white) 0%, var(--pale-green) 100%); }
+        .artists-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .artist-card { text-align: center; padding: 1.5rem 1rem; background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); transition: all 0.4s ease; border: 1px solid transparent; }
+        .artist-card:hover, .artist-card:active { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--soft-green); }
+        .artist-avatar { width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 1rem; overflow: hidden; border: 3px solid var(--mint); box-shadow: var(--shadow-sm); }
+        .artist-avatar img { width: 100%; height: 100%; object-fit: cover; }
+        .artist-name { font-family: var(--font-heading); font-size: 1rem; color: var(--forest); margin-bottom: 0.25rem; }
+        .artist-specialty { color: var(--light-green); font-size: 0.85rem; font-weight: 500; margin-bottom: 0.5rem; }
+        .artist-bio { color: var(--medium-gray); font-size: 0.85rem; line-height: 1.5; margin-bottom: 1rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+        .artist-social { display: flex; justify-content: center; gap: 0.5rem; }
+        .artist-social a { width: 40px; height: 40px; border-radius: 50%; background: var(--pale-green); display: flex; align-items: center; justify-content: center; color: var(--primary-green); transition: all 0.3s ease; }
+        .artist-social a:hover, .artist-social a:active { background: var(--primary-green); color: white; }
+
+        .gift-shop { background: var(--white); }
+        .gift-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .gift-card { background: var(--off-white); border-radius: var(--radius-lg); padding: 1rem; text-align: center; transition: all 0.4s ease; border: 1px solid rgba(124,179,66,0.1); }
+        .gift-card:hover, .gift-card:active { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--soft-green); }
+        .gift-img { width: 100%; aspect-ratio: 1; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 0.75rem; }
+        .gift-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .gift-card:hover .gift-img img, .gift-card:active .gift-img img { transform: scale(1.05); }
+        .gift-name { font-family: var(--font-heading); font-size: 0.95rem; color: var(--forest); margin-bottom: 0.25rem; line-height: 1.3; }
+        .gift-price { font-size: 1.1rem; font-weight: 700; color: var(--primary-green); margin-bottom: 0.5rem; }
+
+        .news { background: linear-gradient(135deg, var(--forest) 0%, var(--primary-green) 100%); position: relative; overflow: hidden; }
+        .news .section-title, .news .section-desc { color: white; }
+        .news .section-tag { color: var(--soft-green); }
+        .newsletter-form { max-width: 100%; margin: 0 auto; display: flex; flex-direction: column; gap: 0.75rem; padding: 0 0.5rem; }
+        .newsletter-input { width: 100%; padding: 0.875rem 1rem; border: 2px solid rgba(255,255,255,0.2); border-radius: var(--radius-md); background: rgba(255,255,255,0.1); color: white; font-size: 16px !important; outline: none; transition: all 0.3s ease; min-height: 48px; }
+        .newsletter-input::placeholder { color: rgba(255,255,255,0.6); }
+        .newsletter-input:focus { border-color: var(--soft-green); background: rgba(255,255,255,0.15); }
+        .btn-newsletter { padding: 0.875rem 1.5rem; background: var(--light-green); color: white; border-radius: var(--radius-md); font-size: 1rem; font-weight: 600; transition: all 0.3s ease; min-height: 48px; }
+        .btn-newsletter:hover, .btn-newsletter:active { background: var(--sage); }
+
+        .contact { background: var(--off-white); }
+        .contact-grid { display: flex; flex-direction: column; gap: 2rem; }
+        .contact-info h3 { font-family: var(--font-heading); font-size: 1.5rem; color: var(--forest); margin-bottom: 1rem; }
+        .contact-info p { color: var(--dark-gray); margin-bottom: 1.5rem; line-height: 1.7; }
+        .contact-details { display: flex; flex-direction: column; gap: 1rem; }
+        .contact-item { display: flex; align-items: flex-start; gap: 1rem; }
+        .contact-icon { width: 44px; height: 44px; border-radius: var(--radius-md); background: var(--pale-green); display: flex; align-items: center; justify-content: center; color: var(--primary-green); font-size: 1.25rem; flex-shrink: 0; }
+        .contact-item h4 { color: var(--forest); font-size: 1rem; margin-bottom: 0.25rem; }
+        .contact-item p { color: var(--medium-gray); font-size: 0.9rem; margin: 0; }
+        .contact-form { background: var(--white); padding: 1.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+        .form-group { margin-bottom: 1rem; }
+        .form-group label { display: block; color: var(--forest); font-weight: 500; margin-bottom: 0.5rem; font-size: 0.95rem; }
+        .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 0.75rem 1rem; border: 2px solid var(--light-gray); border-radius: var(--radius-sm); font-size: 16px !important; outline: none; transition: all 0.3s ease; min-height: 48px; }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--light-green); box-shadow: 0 0 0 3px rgba(124,179,66,0.1); }
+        .form-group textarea { min-height: 120px; resize: vertical; }
+        .btn-submit { width: 100%; padding: 0.875rem; background: var(--primary-green); color: white; border-radius: var(--radius-md); font-size: 1rem; font-weight: 600; transition: all 0.3s ease; min-height: 48px; }
+        .btn-submit:hover, .btn-submit:active { background: var(--forest); }
+
+        .cart-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 2000; opacity: 0; visibility: hidden; transition: all 0.3s ease; }
+        .cart-overlay.active { opacity: 1; visibility: visible; }
+        .cart-sidebar { position: fixed; top: 0; right: 0; width: 100%; max-width: 100%; height: 100vh; height: 100dvh; background: var(--white); z-index: 2001; transform: translateX(100%); transition: transform 0.3s ease; display: flex; flex-direction: column; box-shadow: -8px 0 32px rgba(0,0,0,0.1); }
+        .cart-sidebar.active { transform: translateX(0); }
+        .cart-header { display: flex; align-items: center; justify-content: space-between; padding: 1rem; border-bottom: 1px solid var(--light-gray); flex-shrink: 0; }
+        .cart-header h3 { font-family: var(--font-heading); font-size: 1.25rem; color: var(--forest); }
+        .cart-close { width: 44px; height: 44px; border-radius: 50%; background: var(--pale-green); display: flex; align-items: center; justify-content: center; color: var(--primary-green); transition: all 0.3s ease; }
+        .cart-close:hover, .cart-close:active { background: var(--soft-green); }
+        .cart-items { flex: 1; overflow-y: auto; padding: 1rem; -webkit-overflow-scrolling: touch; }
+        .cart-empty { text-align: center; padding: 3rem 1rem; color: var(--medium-gray); }
+        .cart-empty-icon { font-size: 3rem; margin-bottom: 1rem; opacity: 0.5; }
+        .cart-item { display: flex; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--light-gray); }
+        .cart-item-img { width: 70px; height: 70px; border-radius: var(--radius-sm); overflow: hidden; flex-shrink: 0; }
+        .cart-item-img img { width: 100%; height: 100%; object-fit: cover; }
+        .cart-item-details { flex: 1; min-width: 0; }
+        .cart-item-name { font-weight: 600; color: var(--forest); margin-bottom: 0.25rem; font-size: 0.95rem; word-wrap: break-word; }
+        .cart-item-artist { font-size: 0.8rem; color: var(--medium-gray); margin-bottom: 0.5rem; }
+        .cart-item-price { color: var(--primary-green); font-weight: 700; font-size: 0.95rem; }
+        .cart-item-remove { color: var(--medium-gray); font-size: 0.85rem; cursor: pointer; transition: color 0.3s ease; margin-top: 0.25rem; display: inline-block; padding: 0.25rem 0; min-height: 32px; }
+        .cart-item-remove:hover, .cart-item-remove:active { color: #c62828; }
+        .cart-footer { padding: 1rem; border-top: 1px solid var(--light-gray); background: var(--off-white); flex-shrink: 0; }
+        .cart-subtotal { display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 1rem; }
+        .cart-subtotal span:last-child { font-weight: 700; color: var(--primary-green); }
+        .cart-shipping { display: flex; justify-content: space-between; margin-bottom: 1rem; color: var(--medium-gray); font-size: 0.9rem; }
+        .cart-total { display: flex; justify-content: space-between; padding-top: 0.75rem; border-top: 2px solid var(--light-gray); font-size: 1.15rem; font-weight: 700; color: var(--forest); margin-bottom: 1rem; }
+        .btn-checkout { width: 100%; padding: 0.875rem; background: var(--primary-green); color: white; border-radius: var(--radius-md); font-size: 1rem; font-weight: 600; transition: all 0.3s ease; min-height: 48px; }
+        .btn-checkout:hover, .btn-checkout:active { background: var(--forest); }
+
+        .checkout-modal { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 3000; display: flex; align-items: flex-end; justify-content: center; opacity: 0; visibility: hidden; transition: all 0.3s ease; }
+        .checkout-modal.active { opacity: 1; visibility: visible; }
+        .checkout-content { background: var(--white); border-radius: var(--radius-lg) var(--radius-lg) 0 0; width: 100%; max-width: 100%; max-height: 90vh; max-height: 90dvh; overflow-y: auto; padding: 1.5rem; position: relative; transform: translateY(100%); transition: transform 0.3s ease; -webkit-overflow-scrolling: touch; }
+        .checkout-modal.active .checkout-content { transform: translateY(0); }
+        .checkout-close { position: absolute; top: 1rem; right: 1rem; width: 40px; height: 40px; border-radius: 50%; background: var(--light-gray); display: flex; align-items: center; justify-content: center; color: var(--dark-gray); z-index: 10; }
+        .checkout-content h2 { font-family: var(--font-heading); font-size: 1.5rem; color: var(--forest); margin-bottom: 1.5rem; padding-right: 3rem; }
+        .checkout-form .form-group { margin-bottom: 0.75rem; }
+        .checkout-form .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+        .checkout-summary { background: var(--pale-green); padding: 1rem; border-radius: var(--radius-md); margin: 1rem 0; }
+        .checkout-summary h4 { color: var(--forest); margin-bottom: 0.75rem; font-size: 1rem; }
+        .checkout-item { display: flex; justify-content: space-between; padding: 0.4rem 0; font-size: 0.9rem; color: var(--dark-gray); word-break: break-word; gap: 0.5rem; }
+        .checkout-total { display: flex; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid var(--soft-green); font-weight: 700; color: var(--forest); font-size: 1.1rem; }
+
+        .footer { background: var(--deep-forest); color: rgba(255,255,255,0.8); padding-top: 3rem; }
+        .footer-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-bottom: 2rem; }
+        .footer-brand .logo { color: white; margin-bottom: 1rem; }
+        .footer-brand p { line-height: 1.7; margin-bottom: 1rem; color: rgba(255,255,255,0.7); font-size: 0.95rem; }
+        .footer-social { display: flex; gap: 0.75rem; }
+        .footer-social a { width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; color: white; transition: all 0.3s ease; }
+        .footer-social a:hover, .footer-social a:active { background: var(--light-green); transform: translateY(-2px); }
+        .footer-column h4 { color: white; font-family: var(--font-heading); font-size: 1.1rem; margin-bottom: 1rem; }
+        .footer-column ul li { margin-bottom: 0.5rem; }
+        .footer-column ul li a { color: rgba(255,255,255,0.7); transition: color 0.3s ease; font-size: 0.95rem; display: block; padding: 0.25rem 0; min-height: 32px; }
+        .footer-column ul li a:hover, .footer-column ul li a:active { color: var(--soft-green); }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding: 1rem 0; display: flex; flex-direction: column; align-items: center; gap: 0.75rem; text-align: center; }
+        .footer-bottom p { font-size: 0.85rem; color: rgba(255,255,255,0.5); }
+        .footer-legal { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+        .footer-legal a { font-size: 0.85rem; color: rgba(255,255,255,0.5); transition: color 0.3s ease; }
+        .footer-legal a:hover, .footer-legal a:active { color: var(--soft-green); }
+
+        .toast-container { position: fixed; bottom: 80px; left: 1rem; right: 1rem; z-index: 5000; display: flex; flex-direction: column; gap: 0.5rem; pointer-events: none; }
+        .toast { background: var(--forest); color: white; padding: 0.875rem 1rem; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); display: flex; align-items: center; gap: 0.75rem; transform: translateY(20px); opacity: 0; transition: all 0.4s ease; pointer-events: auto; font-size: 0.95rem; }
+        .toast.show { transform: translateY(0); opacity: 1; }
+        .toast-success { border-left: 4px solid var(--light-green); }
+        .toast-error { border-left: 4px solid #c62828; }
+        @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--light-gray); }
+        ::-webkit-scrollbar-thumb { background: var(--soft-green); border-radius: 3px; }
+        :focus-visible { outline: 2px solid var(--light-green); outline-offset: 2px; }
+        button, .btn, .product-action-btn, .cart-close, .checkout-close { user-select: none; -webkit-user-select: none; }
+        html { scroll-padding-top: 70px; }
+
+        /* ============================================
+           TABLET (640px+)
+           ============================================ */
+        @media (min-width: 640px) {
+            .container { padding: 0 1.5rem; }
+            .section-padding { padding: 4rem 0; }
+            .hero { padding: 6rem 0 3rem; }
+            .hero-grid { gap: 3rem; }
+            .hero-buttons { flex-direction: row; }
+            .btn { width: auto; }
+            .categories-grid { grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+            .products-grid { grid-template-columns: repeat(2, 1fr); }
+            .artists-grid { grid-template-columns: repeat(2, 1fr); }
+            .gift-grid { grid-template-columns: repeat(4, 1fr); }
+            .contact-grid { flex-direction: row; }
+            .contact-form { padding: 2rem; }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-bottom { flex-direction: row; justify-content: space-between; }
+            .newsletter-form { flex-direction: row; }
+            .cart-sidebar { max-width: 420px; }
+            .checkout-modal { align-items: center; padding: 1rem; }
+            .checkout-content { border-radius: var(--radius-lg); max-width: 600px; transform: scale(0.95); }
+            .checkout-modal.active .checkout-content { transform: scale(1); }
+            .toast-container { left: auto; right: 1.5rem; width: auto; max-width: 400px; }
+        }
+
+        /* ============================================
+           DESKTOP (1024px+)
+           ============================================ */
+        @media (min-width: 1024px) {
+            .container { padding: 0 2rem; }
+            .section-padding { padding: 5rem 0; }
+            .nav { height: 80px; padding: 0; }
+            .logo { font-size: 1.8rem; }
+            .nav-links { position: static; flex-direction: row; background: transparent; backdrop-filter: none; transform: none; padding: 0; gap: 2rem; overflow: visible; }
+            .nav-links a { width: auto; padding: 0.5rem 0; border-bottom: none; font-size: 0.95rem; position: relative; }
+            .nav-links a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--light-green); transition: width 0.3s ease; }
+            .nav-links a:hover::after { width: 100%; }
+            .mobile-menu-btn { display: none; }
+            .hero { min-height: 100vh; padding-top: 80px; }
+            .hero-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; }
+            .hero-content { text-align: left; order: 1; }
+            .hero-visual { order: 2; }
+            .hero-img img { height: 280px; }
+            .products-grid { grid-template-columns: repeat(3, 1fr); }
+            .artists-grid { grid-template-columns: repeat(4, 1fr); }
+            .contact-grid { grid-template-columns: 1fr 1fr; }
+            .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
+            .cookie-banner-inner { flex-direction: row; text-align: left; }
+            .cookie-buttons { flex-wrap: nowrap; }
+        }
+    </style>
+    <meta name="theme-color" content="#2D5A3D">
+    <meta name="color-scheme" content="light">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Performance: Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+</head>
+<body>
+
+    <!-- ============================================
+         HEADER / NAVEGACIÓN
+         ============================================ -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    🎨 Popular <span>Art</span>
+                </a>
+                
+                <div class="nav-links">
+                    <a href="#pinturas">Pinturas</a>
+                    <a href="#esculturas">Esculturas</a>
+                    <a href="#fotografia">Fotografía</a>
+                    <a href="#novedades">Novedades</a>
+                    <a href="#artistas">Artistas</a>
+                    <a href="#gift-shop">Gift Shop</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <button class="cart-btn" id="cartBtn" aria-label="Carrito de compras">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                    
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menú móvil">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content fade-in">
+                    <div class="hero-tag">
+                        🌿 Galería de Arte Contemporáneo
+                    </div>
+                    <h1 class="hero-title">
+                        Descubre el Arte que <span>Inspira</span> tu Mundo
+                    </h1>
+                    <p class="hero-desc">
+                        Explora nuestra curada colección de obras únicas. Desde pinturas vibrantes hasta esculturas cautivadoras, cada pieza cuenta una historia de creatividad y pasión.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#pinturas" class="btn btn-primary">
+                            Explorar Colección
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#artistas" class="btn btn-secondary">
+                            Conoce a los Artistas
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual fade-in">
+                    <div class="hero-img animate-float">
+                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&h=700&fit=crop" alt="Pintura abstracta contemporánea con tonos verdes">
+                    </div>
+                    <div class="hero-img animate-float" style="animation-delay: 1s;">
+                        <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=600&h=700&fit=crop" alt="Escultura moderna en tonos naturales">
+                    </div>
+                    <div class="hero-img animate-float" style="animation-delay: 2s;">
+                        <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=600&h=700&fit=crop" alt="Fotografía artística de naturaleza">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CATEGORÍAS
+         ============================================ -->
+    <section class="categories section-padding" id="categorias">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Colecciones</span>
+                <h2 class="section-title">Explora por Categoría</h2>
+                <p class="section-desc">Navega por nuestras especialidades y encuentra la pieza perfecta para tu espacio.</p>
+            </div>
+            
+            <div class="categories-grid">
+                <a href="#pinturas" class="category-card fade-in">
+                    <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=500&h=700&fit=crop" alt="Pinturas">
+                    <div class="category-overlay">
+                        <h3 class="category-name">Pinturas</h3>
+                        <span class="category-count">124 obras disponibles</span>
+                    </div>
+                </a>
+                
+                <a href="#esculturas" class="category-card fade-in">
+                    <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=500&h=700&fit=crop" alt="Esculturas">
+                    <div class="category-overlay">
+                        <h3 class="category-name">Esculturas</h3>
+                        <span class="category-count">56 piezas únicas</span>
+                    </div>
+                </a>
+                
+                <a href="#fotografia" class="category-card fade-in">
+                    <img src="https://images.unsplash.com/photo-1554048612-387768052bf7?w=500&h=700&fit=crop" alt="Fotografía">
+                    <div class="category-overlay">
+                        <h3 class="category-name">Fotografía</h3>
+                        <span class="category-count">89 impresiones</span>
+                    </div>
+                </a>
+                
+                <a href="#novedades" class="category-card fade-in">
+                    <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=500&h=700&fit=crop" alt="Novedades">
+                    <div class="category-overlay">
+                        <h3 class="category-name">Novedades</h3>
+                        <span class="category-count">32 nuevas llegadas</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PINTURAS DESTACADAS
+         ============================================ -->
+    <section class="featured section-padding" id="pinturas">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Pinturas</span>
+                <h2 class="section-title">Obras Destacadas</h2>
+                <p class="section-desc">Piezas seleccionadas por nuestros curadores, listas para transformar cualquier espacio.</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <div class="product-card fade-in" data-id="1" data-name="Serenidad Verde" data-price="450" data-artist="María Fernández" data-img="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500&h=600&fit=crop">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500&h=600&fit=crop" alt="Serenidad Verde - Pintura abstracta">
+                        <span class="product-badge">Nuevo</span>
+                        <div class="product-actions">
+                            <button class="product-action-btn" aria-label="Ver detalles">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            </button>
+                            <button class="product-action-btn" aria-label="Añadir a favoritos">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-artist">María Fernández</p>
+                        <h3 class="product-name">Serenidad Verde</h3>
+                        <p style="color: var(--medium-gray); font-size: 0.9rem;">Óleo sobre lienzo, 80x100cm</p>
+                        <div class="product-meta">
+                            <span class="product-price">$450</span>
+                            <button class="btn-add-cart" onclick="addToCart(1)">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="product-card fade-in" data-id="2" data-name="Bosque Interior" data-price="680" data-artist="Carlos Ruiz" data-img="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=500&h=600&fit=crop">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=500&h=600&fit=crop" alt="Bosque Interior - Pintura contemporánea">
+                        <div class="product-actions">
+                            <button class="product-action-btn" aria-label="Ver detalles">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            </button>
+                            <button class="product-action-btn" aria-label="Añadir a favoritos">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-artist">Carlos Ruiz</p>
+                        <h3 class="product-name">Bosque Interior</h3>
+                        <p style="color: var(--medium-gray); font-size: 0.9rem;">Acrílico mixto, 120x150cm</p>
+                        <div class="product-meta">
+                            <span class="product-price">$680</span>
+                            <button class="btn-add-cart" onclick="addToCart(2)">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="product-card fade-in" data-id="3" data-name="Primavera Eterna" data-price="320" data-artist="Ana Lucía" data-img="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=500&h=600&fit=crop">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=500&h=600&fit=crop" alt="Primavera Eterna - Pintura floral">
+                        <span class="product-badge">Oferta</span>
+                        <div class="product-actions">
+                            <button class="product-action-btn" aria-label="Ver detalles">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            </button>
+                            <button class="product-action-btn" aria-label="Añadir a favoritos">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-artist">Ana Lucía</p>
+                        <h3 class="product-name">Primavera Eterna</h3>
+                        <p style="color: var(--medium-gray); font-size: 0.9rem;">Acuarela, 60x80cm</p>
+                        <div class="product-meta">
+                            <span class="product-price">$320 <span class="original">$400</span></span>
+                            <button class="btn-add-cart" onclick="addToCart(3)">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ESCULTURAS
+         ============================================ -->
+    <section class="featured section-padding" id="esculturas" style="background: var(--white);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Esculturas</span>
+                <h2 class="section-title">Esculturas Contemporáneas</h2>
+                <p class="section-desc">Formas tridimensionales que desafían la percepción y añaden profundidad a cualquier ambiente.</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card fade-in" data-id="4" data-name="Raíces del Tiempo" data-price="1200" data-artist="Roberto Méndez" data-img="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=500&h=600&fit=crop">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=500&h=600&fit=crop" alt="Raíces del Tiempo - Escultura">
+                        <span class="product-badge">Edición Limitada</span>
+                        <div class="product-actions">
+                            <button class="product-action-btn" aria-label="Ver detalles">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-artist">Roberto Méndez</p>
+                        <h3 class="product-name">Raíces del Tiempo</h3>
+                        <p style="color: var(--medium-gray); font-size: 0.9rem;">Bronce patinado, 45x30x30cm</p>
+                        <div class="product-meta">
+                            <span class="product-price">$1,200</span>
+                            <button class="btn-add-cart" onclick="addToCart(4)">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card fade-in" data-id="5" data-name="Equilibrio Natural" data-price="890" data-artist="Sofía Vega" data-img="https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=500&h=600&fit=crop">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=500&h=600&fit=crop" alt="Equilibrio Natural - Escultura moderna">
+                        <div class="product-actions">
+                            <button class="product-action-btn" aria-label="Ver detalles">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-artist">Sofía Vega</p>
+                        <h3 class="product-name">Equilibrio Natural</h3>
+                        <p style="color: var(--medium-gray); font-size: 0.9rem;">Mármol verde, 35x25x25cm</p>
+                        <div class="product-meta">
+                            <span class="product-price">$890</span>
+                            <button class="btn-add-cart" onclick="addToCart(5)">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card fade-in" data-id="6" data-name="Viento Silvestre" data-price="650" data-artist="Diego Torres" data-img="https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=500&h=600&fit=crop">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=500&h=600&fit=crop" alt="Viento Silvestre - Escultura abstracta">
+                        <div class="product-actions">
+                            <button class="product-action-btn" aria-label="Ver detalles">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-artist">Diego Torres</p>
+                        <h3 class="product-name">Viento Silvestre</h3>
+                        <p style="color: var(--medium-gray); font-size: 0.9rem;">Resina y metal, 50x40x20cm</p>
+                        <div class="product-meta">
+                            <span class="product-price">$650</span>
+                            <button class="btn-add-cart" onclick="addToCart(6)">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOTOGRAFÍA
+         ============================================ -->
+    <section class="featured section-padding" id="fotografia">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Fotografía</span>
+                <h2 class="section-title">Fotografía Artística</h2>
+                <p class="section-desc">Momentos capturados con maestría, impresiones de museo en diversos formatos.</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card fade-in" data-id="7" data-name="Amanecer en el Lago" data-price="280" data-artist="Laura Campos" data-img="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=600&fit=crop">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=600&fit=crop" alt="Amanecer en el Lago - Fotografía">
+                        <div class="product-actions">
+                            <button class="product-action-btn" aria-label="Ver detalles">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-artist">Laura Campos</p>
+                        <h3 class="product-name">Amanecer en el Lago</h3>
+                        <p style="color: var(--medium-gray); font-size: 0.9rem;">Impresión Giclée, 60x90  He creado una página web completa para **"Popular Art"** con todas las funcionalidades que solicitaste. Aquí está el resto del código:
+
+```html
+                        <div class="product-meta">
+                            <span class="product-price">$280</span>
+                            <button class="btn-add-cart" onclick="addToCart(7)">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card fade-in" data-id="8" data-name="Bosque Nebuloso" data-price="350" data-artist="Javier Morales" data-img="https://images.unsplash.com/photo-1448375240586-882707db888b?w=500&h=600&fit=crop">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=500&h=600&fit=crop" alt="Bosque Nebuloso - Fotografía de naturaleza">
+                        <span class="product-badge">Popular</span>
+                        <div class="product-actions">
+                            <button class="product-action-btn" aria-label="Ver detalles">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-artist">Javier Morales</p>
+                        <h3 class="product-name">Bosque Nebuloso</h3>
+                        <p style="color: var(--medium-gray); font-size: 0.9rem;">Impresión en aluminio, 80x120cm</p>
+                        <div class="product-meta">
+                            <span class="product-price">$350</span>
+                            <button class="btn-add-cart" onclick="addToCart(8)">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card fade-in" data-id="9" data-name="Texturas Naturales" data-price="220" data-artist="Elena Ríos" data-img="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=500&h=600&fit=crop">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=500&h=600&fit=crop" alt="Texturas Naturales - Fotografía macro">
+                        <div class="product-actions">
+                            <button class="product-action-btn" aria-label="Ver detalles">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-artist">Elena Ríos</p>
+                        <h3 class="product-name">Texturas Naturales</h3>
+                        <p style="color: var(--medium-gray); font-size: 0.9rem;">Impresión en lienzo, 50x50cm</p>
+                        <div class="product-meta">
+                            <span class="product-price">$220</span>
+                            <button class="btn-add-cart" onclick="addToCart(9)">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ARTISTAS
+         ============================================ -->
+    <section class="artists section-padding" id="artistas">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Nuestros Artistas</span>
+                <h2 class="section-title">Conoce a los Creadores</h2>
+                <p class="section-desc">Talentos emergentes y consolidados que dan vida a cada pieza de nuestra colección.</p>
+            </div>
+            
+            <div class="artists-grid">
+                <div class="artist-card fade-in">
+                    <div class="artist-avatar">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop" alt="María Fernández - Artista">
+                    </div>
+                    <h3 class="artist-name">María Fernández</h3>
+                    <p class="artist-specialty">Pintura Abstracta</p>
+                    <p class="artist-bio">Especializada en paisajes abstractos que exploran la conexión entre la naturaleza y las emociones humanas.</p>
+                    <div class="artist-social">
+                        <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        <a href="#" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                    </div>
+                </div>
+                
+                <div class="artist-card fade-in">
+                    <div class="artist-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" alt="Carlos Ruiz - Artista">
+                    </div>
+                    <h3 class="artist-name">Carlos Ruiz</h3>
+                    <p class="artist-specialty">Pintura Contemporánea</p>
+                    <p class="artist-bio">Su trabajo fusiona técnicas tradicionales con materiales innovadores para crear texturas únicas.</p>
+                    <div class="artist-social">
+                        <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        <a href="#" aria-label="Behance"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h6a4 4 0 0 1 4 4 4 4 0 0 1-4 4H3V3z"></path><path d="M3 11h7a4 4 0 0 1 4 4 4 4 0 0 1-4 4H3v-8z"></path><path d="M15 11h6"></path><path d="M18 8v6"></path></svg></a>
+                    </div>
+                </div>
+                
+                <div class="artist-card fade-in">
+                    <div class="artist-avatar">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop" alt="Sofía Vega - Artista">
+                    </div>
+                    <h3 class="artist-name">Sofía Vega</h3>
+                    <p class="artist-specialty">Escultura</p>
+                    <p class="artist-bio">Escultora que trabaja con materiales orgánicos y metales para crear formas que dialogan con el espacio.</p>
+                    <div class="artist-social">
+                        <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        <a href="#" aria-label="Website"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></a>
+                    </div>
+                </div>
+                
+                <div class="artist-card fade-in">
+                    <div class="artist-avatar">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop" alt="Javier Morales - Artista">
+                    </div>
+                    <h3 class="artist-name">Javier Morales</h3>
+                    <p class="artist-specialty">Fotografía</p>
+                    <p class="artist-bio">Fotógrafo de paisajes que captura la esencia de la naturaleza en su estado más puro y etéreo.</p>
+                    <div class="artist-social">
+                        <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        <a href="#" aria-label="500px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         GIFT SHOP
+         ============================================ -->
+    <section class="gift-shop section-padding" id="gift-shop">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Gift Shop</span>
+                <h2 class="section-title">Regalos Artísticos</h2>
+                <p class="section-desc">Encuentra el regalo perfecto: libros de arte, prints, merchandising y más.</p>
+            </div>
+            
+            <div class="gift-grid">
+                <div class="gift-card fade-in" data-id="10" data-name="Set de Postales Artísticas" data-price="25" data-artist="Popular Art" data-img="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&h=400&fit=crop">
+                    <div class="gift-img">
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&h=400&fit=crop" alt="Set de Postales Artísticas">
+                    </div>
+                    <h3 class="gift-name">Set de Postales Artísticas</h3>
+                    <p style="color: var(--medium-gray); font-size: 0.85rem; margin-bottom: 0.5rem;">Pack de 12 postales</p>
+                    <p class="gift-price">$25</p>
+                    <button class="btn-add-cart" onclick="addToCart(10)" style="width: 100%; margin-top: 0.5rem;">
+                        Añadir al carrito
+                    </button>
+                </div>
+                
+                <div class="gift-card fade-in" data-id="11" data-name="Libro 'Arte Contemporáneo'" data-price="45" data-artist="Popular Art" data-img="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop">
+                    <div class="gift-img">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop" alt="Libro Arte Contemporáneo">
+                    </div>
+                    <h3 class="gift-name">Libro 'Arte Contemporáneo'</h3>
+                    <p style="color: var(--medium-gray); font-size: 0.85rem; margin-bottom: 0.5rem;">Edición especial</p>
+                    <p class="gift-price">$45</p>
+                    <button class="btn-add-cart" onclick="addToCart(11)" style="width: 100%; margin-top: 0.5rem;">
+                        Añadir al carrito
+                    </button>
+                </div>
+                
+                <div class="gift-card fade-in" data-id="12" data-name="Tote Bag Artística" data-price="18" data-artist="Popular Art" data-img="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=400&fit=crop">
+                    <div class="gift-img">
+                        <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=400&fit=crop" alt="Tote Bag Artística">
+                    </div>
+                    <h3 class="gift-name">Tote Bag Artística</h3>
+                    <p style="color: var(--medium-gray); font-size: 0.85rem; margin-bottom: 0.5rem;">Algodón orgánico</p>
+                    <p class="gift-price">$18</p>
+                    <button class="btn-add-cart" onclick="addToCart(12)" style="width: 100%; margin-top: 0.5rem;">
+                        Añadir al carrito
+                    </button>
+                </div>
+                
+                <div class="gift-card fade-in" data-id="13" data-name="Set de Lápices de Arte" data-price="35" data-artist="Popular Art" data-img="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&h=400&fit=crop">
+                    <div class="gift-img">
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&h=400&fit=crop" alt="Set de Lápices de Arte">
+                    </div>
+                    <h3 class="gift-name">Set de Lápices de Arte</h3>
+                    <p style="color: var(--medium-gray); font-size: 0.85rem; margin-bottom: 0.5rem;">24 colores profesionales</p>
+                    <p class="gift-price">$35</p>
+                    <button class="btn-add-cart" onclick="addToCart(13)" style="width: 100%; margin-top: 0.5rem;">
+                        Añadir al carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         NOVEDADES / NEWSLETTER
+         ============================================ -->
+    <section class="news section-padding" id="novedades">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Novedades</span>
+                <h2 class="section-title">Mantente al Día</h2>
+                <p class="section-desc">Suscríbete a nuestro newsletter y sé el primero en conocer nuevas obras, eventos y ofertas exclusivas.</p>
+            </div>
+            
+            <form class="newsletter-form fade-in" id="newsletterForm" onsubmit="handleNewsletter(event)">
+                <input type="email" class="newsletter-input" placeholder="Tu correo electrónico" required aria-label="Correo electrónico">
+                <button type="submit" class="btn-newsletter">Suscribirse</button>
+            </form>
+            
+            <div style="text-align: center; margin-top: var(--space-lg); display: flex; justify-content: center; gap: var(--space-xl); flex-wrap: wrap;">
+                <div style="color: rgba(255,255,255,0.8);">
+                    <div style="font-size: 2rem; font-weight: 700; color: white;">500+</div>
+                    <div style="font-size: 0.9rem;">Obras en colección</div>
+                </div>
+                <div style="color: rgba(255,255,255,0.8);">
+                    <div style="font-size: 2rem; font-weight: 700; color: white;">50+</div>
+                    <div style="font-size: 0.9rem;">Artistas representados</div>
+                </div>
+                <div style="color: rgba(255,255,255,0.8);">
+                    <div style="font-size: 2rem; font-weight: 700; color: white;">30+</div>
+                    <div style="font-size: 0.9rem;">Países de envío</div>
+                </div>
+                <div style="color: rgba(255,255,255,0.8);">
+                    <div style="font-size: 2rem; font-weight: 700; color: white;">100%</div>
+                    <div style="font-size: 0.9rem;">Satisfacción garantizada</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACTO
+         ============================================ -->
+    <section class="contact section-padding" id="contacto">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Contacto</span>
+                <h2 class="section-title">Hablemos de Arte</h2>
+                <p class="section-desc">¿Tienes preguntas sobre una obra? ¿Quieres organizar una visita? Estamos aquí para ayudarte.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <h3>Visítanos o Escríbenos</h3>
+                    <p>Nuestro equipo de expertos está listo para asesorarte en la selección de la pieza perfecta para tu colección o espacio.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Dirección</h4>
+                                <p>Calle Arte 123, Distrito Cultural<br>Ciudad, CP 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p>+1 (234) 567-8900<br>Lun-Vie: 9:00 - 18:00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hola@popularart.com<br>ventas@popularart.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form fade-in" id="contactForm" onsubmit="handleContact(event)">
+                    <div class="form-group">
+                        <label for="contactName">Nombre completo *</label>
+                        <input type="text" id="contactName" name="name" required placeholder="Tu nombre">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactEmail">Correo electrónico *</label>
+                        <input type="email" id="contactEmail" name="email" required placeholder="tu@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactSubject">Asunto</label>
+                        <select id="contactSubject" name="subject">
+                            <option value="general">Consulta general</option>
+                            <option value="purchase">Información de compra</option>
+                            <option value="artist">Información de artista</option>
+                            <option value="visit">Agendar visita</option>
+                            <option value="other">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactMessage">Mensaje *</label>
+                        <textarea id="contactMessage" name="message" required placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+                    </div>
+                    
+                    <div class="form-group" style="display: flex; align-items: flex-start; gap: 0.5rem;">
+                        <input type="checkbox" id="privacyCheck" required style="width: auto; margin-top: 0.25rem;">
+                        <label for="privacyCheck" style="margin: 0; font-weight: 400; font-size: 0.9rem; color: var(--medium-gray);">
+                            Acepto la <a href="#privacidad" style="color: var(--primary-green); text-decoration: underline;">política de privacidad</a> y el tratamiento de mis datos.
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        🎨 Popular <span>Art</span>
+                    </a>
+                    <p>Galería de arte contemporáneo dedicada a descubrir y promover talentos emergentes. Cada obra es una ventana a nuevas perspectivas.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                        <a href="#" aria-label="Pinterest"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="8" x2="12" y2="21"></line><path d="M5 12H2a10 10 0 0 0 20 0h-3"></path><circle cx="12" cy="8" r="7"></circle></svg></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Colecciones</h4>
+                    <ul>
+                        <li><a href="#pinturas">Pinturas</a></li>
+                        <li><a href="#esculturas">Esculturas</a></li>
+                        <li><a href="#fotografia">Fotografía</a></li>
+                        <li><a href="#novedades">Novedades</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#artistas">Artistas</a></li>
+                        <li><a href="#gift-shop">Gift Shop</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#exposiciones">Exposiciones</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacidad">Política de Privacidad</a></li>
+                        <li><a href="#terminos">Términos de Servicio</a></li>
+                        <li><a href="#cookies">Política de Cookies</a></li>
+                        <li><a href="#devoluciones">Devoluciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Popular Art. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#privacidad">Privacidad</a>
+                    <a href="#terminos">Términos</a>
+                    <a href="#cookies">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         CARRITO SIDEBAR
+         ============================================ -->
+    <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <button class="cart-close" onclick="closeCart()" aria-label="Cerrar carrito">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+        
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty" id="cartEmpty">
+                <div class="cart-empty-icon">🛒</div>
+                <h4 style="color: var(--forest); margin-bottom: 0.5rem;">Tu carrito está vacío</h4>
+                <p>Explora nuestra colección y encuentra tu próxima obra favorita.</p>
+                <button class="btn btn-primary" onclick="closeCart()" style="margin-top: var(--space-md);">
+                    Explorar obras
+                </button>
+            </div>
+        </div>
+        
+        <div class="cart-footer" id="cartFooter" style="display: none;">
+            <div class="cart-subtotal">
+                <span>Subtotal</span>
+                <span id="cartSubtotal">$0</span>
+            </div>
+            <div class="cart-shipping">
+                <span>Envío</span>
+                <span>Calculado al checkout</span>
+            </div>
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cartTotal">$0</span>
+            </div>
+            <button class="btn-checkout" onclick="openCheckout()">
+                Proceder al pago
+            </button>
+            <p style="text-align: center; margin-top: var(--space-sm); font-size: 0.85rem; color: var(--medium-gray);">
+                🔒 Pago seguro con encriptación SSL
+            </p>
+        </div>
+    </div>
+
+    <!-- ============================================
+         CHECKOUT MODAL
+         ============================================ -->
+    <div class="checkout-modal" id="checkoutModal">
+        <div class="checkout-content">
+            <button class="checkout-close" onclick="closeCheckout()" aria-label="Cerrar checkout">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            
+            <h2>Finalizar Compra</h2>
+            
+            <form class="checkout-form" id="checkoutForm" onsubmit="handleCheckout(event)">
+                <h4 style="color: var(--forest); margin-bottom: var(--space-sm); font-size: 1rem;">Información de contacto</h4>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="checkoutFirstName">Nombre *</label>
+                        <input type="text" id="checkoutFirstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkoutLastName">Apellido *</label>
+                        <input type="text" id="checkoutLastName" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="checkoutEmail">Correo electrónico *</label>
+                    <input type="email" id="checkoutEmail" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="checkoutPhone">Teléfono *</label>
+                    <input type="tel" id="checkoutPhone" required>
+                </div>
+                
+                <h4 style="color: var(--forest); margin: var(--space-md) 0 var(--space-sm); font-size: 1rem;">Dirección de envío</h4>
+                <div class="form-group">
+                    <label for="checkoutAddress">Dirección *</label>
+                    <input type="text" id="checkoutAddress" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="checkoutCity">Ciudad *</label>
+                        <input type="text" id="checkoutCity" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkoutPostal">Código postal *</label>
+                        <input type="text" id="checkoutPostal" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="checkoutCountry">País *</label>
+                    <select id="checkoutCountry" required>
+                        <option value="">Seleccionar...</option>
+                        <option value="ES">España</option>
+                        <option value="MX">México</option>
+                        <option value="AR">Argentina</option>
+                        <option value="CO">Colombia</option>
+                        <option value="CL">Chile</option>
+                        <option value="PE">Perú</option>
+                        <option value="US">Estados Unidos</option>
+                        <option value="other">Otro</option>
+                    </select>
+                </div>
+                
+                <div class="checkout-summary">
+                    <h4>Resumen del pedido</h4>
+                    <div id="checkoutItems"></div>
+                    <div class="checkout-total">
+                        <span>Total</span>
+                        <span id="checkoutTotal">$0</span>
+                    </div>
+                </div>
+                
+                <div class="form-group" style="display: flex; align-items: flex-start; gap: 0.5rem;">
+                    <input type="checkbox" id="checkoutTerms" required style="width: auto; margin-top: 0.25rem;">
+                    <label for="checkoutTerms" style="margin: 0; font-weight: 400; font-size: 0.9rem; color: var(--medium-gray);">
+                        Acepto los <a href="#terminos" style="color: var(--primary-green);">términos y condiciones</a> y la <a href="#privacidad" style="color: var(--primary-green);">política de privacidad</a>.
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn-checkout" style="margin-top: var(--space-sm);">
+                    Confirmar pedido
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ============================================
+         TOAST NOTIFICATIONS
+         ============================================ -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- ============================================
+         COOKIE BANNER (GDPR)
+         ============================================ -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-banner-inner">
+            <p>
+                Utilizamos cookies y tecnologías similares para mejorar tu experiencia, analizar el tráfico y personalizar contenido. 
+                Al aceptar, consientes el uso de cookies para publicidad y análisis según nuestra <a href="#cookies">política de cookies</a>.
+            </p>
+            <div class="cookie-buttons">
+                <button class="btn-cookie btn-cookie-decline" onclick="declineCookies()">Rechazar</button>
+                <button class="btn-cookie btn-cookie-accept" onclick="acceptCookies()">Aceptar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================
+         JAVASCRIPT
+         ============================================ -->
+    <script>
+        // ==========================================
+        // ESTADO DEL CARRITO
+        // ==========================================
+        let cart = [];
+        let isMenuOpen = false;
+
+        // ==========================================
+        // DATOS DE PRODUCTOS
+        // ==========================================
+        const products = {
+            1: { name: "Serenidad Verde", price: 450, artist: "María Fernández", img: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=100&h=100&fit=crop" },
+            2: { name: "Bosque Interior", price: 680, artist: "Carlos Ruiz", img: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=100&h=100&fit=crop" },
+            3: { name: "Primavera Eterna", price: 320, artist: "Ana Lucía", img: "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=100&h=100&fit=crop" },
+            4: { name: "Raíces del Tiempo", price: 1200, artist: "Roberto Méndez", img: "https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=100&h=100&fit=crop" },
+            5: { name: "Equilibrio Natural", price: 890, artist: "Sofía Vega", img: "https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=100&h=100&fit=crop" },
+            6: { name: "Viento Silvestre", price: 650, artist: "Diego Torres", img: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=100&h=100&fit=crop" },
+            7: { name: "Amanecer en el Lago", price: 280, artist: "Laura Campos", img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=100&h=100&fit=crop" },
+            8: { name: "Bosque Nebuloso", price: 350, artist: "Javier Morales", img: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=100&h=100&fit=crop" },
+            9: { name: "Texturas Naturales", price: 220, artist: "Elena Ríos", img: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=100&h=100&fit=crop" },
+            10: { name: "Set de Postales Artísticas", price: 25, artist: "Popular Art", img: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=100&h=100&fit=crop" },
+            11: { name: "Libro 'Arte Contemporáneo'", price: 45, artist: "Popular Art", img: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=100&h=100&fit=crop" },
+            12: { name: "Tote Bag Artística", price: 18, artist: "Popular Art", img: "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=100&h=100&fit=crop" },
+            13: { name: "Set de Lápices de Arte", price: 35, artist: "Popular Art", img: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=100&h=100&fit=crop" }
+        };
+
+        // ==========================================
+        // MOBILE MENU
+        // ==========================================
+        function toggleMobileMenu() {
+            const menuBtn = document.getElementById('mobileMenuBtn');
+            const navLinks = document.querySelector('.nav-links');
+            isMenuOpen = !isMenuOpen;
+
+            if (isMenuOpen) {
+                menuBtn.classList.add('active');
+                navLinks.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            } else {
+                menuBtn.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (isMenuOpen) toggleMobileMenu();
+            });
+        });
+
+        // ==========================================
+        // FUNCIONES DEL CARRITO
+        // ==========================================
+        function addToCart(productId) {
+            const product = products[productId];
+            if (!product) return;
+
+            const existingItem = cart.find(item => item.id === productId);
+            if (existingItem) {
+                existingItem.quantity++;
+            } else {
+                cart.push({
+                    id: productId,
+                    name: product.name,
+                    price: product.price,
+                    artist: product.artist,
+                    img: product.img,
+                    quantity: 1
+                });
+            }
+
+            updateCartUI();
+            showToast('"' + product.name + '" añadido al carrito', 'success');
+
+            // Google Ads Conversion
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'add_to_cart', {
+                    'value': product.price,
+                    'currency': 'USD',
+                    'items': [{
+                        'item_id': productId.toString(),
+                        'item_name': product.name,
+                        'item_category': 'Arte',
+                        'price': product.price,
+                        'quantity': 1
+                    }]
+                });
+            }
+        }
+
+        function removeFromCart(productId) {
+            cart = cart.filter(item => item.id !== productId);
+            updateCartUI();
+            showToast('Producto eliminado del carrito', 'success');
+        }
+
+        function updateCartUI() {
+            const cartCount = document.getElementById('cartCount');
+            const cartItems = document.getElementById('cartItems');
+            const cartEmpty = document.getElementById('cartEmpty');
+            const cartFooter = document.getElementById('cartFooter');
+            const cartSubtotal = document.getElementById('cartSubtotal');
+            const cartTotal = document.getElementById('cartTotal');
+
+            const totalItems = cart.reduce(function(sum, item) { return sum + item.quantity; }, 0);
+            const totalPrice = cart.reduce(function(sum, item) { return sum + (item.price * item.quantity); }, 0);
+
+            cartCount.textContent = totalItems;
+
+            if (cart.length === 0) {
+                cartEmpty.style.display = 'block';
+                cartFooter.style.display = 'none';
+                cartItems.innerHTML = '';
+                cartItems.appendChild(cartEmpty);
+            } else {
+                cartEmpty.style.display = 'none';
+                cartFooter.style.display = 'block';
+
+                cartItems.innerHTML = '';
+                cart.forEach(function(item) {
+                    const itemEl = document.createElement('div');
+                    itemEl.className = 'cart-item';
+                    itemEl.innerHTML = '<div class="cart-item-img"><img src="' + item.img + '" alt="' + item.name + '"></div><div class="cart-item-details"><div class="cart-item-name">' + item.name + '</div><div class="cart-item-artist">' + item.artist + '</div><div class="cart-item-price">$' + item.price + ' x ' + item.quantity + '</div><span class="cart-item-remove" onclick="removeFromCart(' + item.id + ')">Eliminar</span></div>';
+                    cartItems.appendChild(itemEl);
+                });
+
+                cartSubtotal.textContent = '$' + totalPrice.toLocaleString();
+                cartTotal.textContent = '$' + totalPrice.toLocaleString();
+            }
+        }
+
+        function openCart() {
+            document.getElementById('cartOverlay').classList.add('active');
+            document.getElementById('cartSidebar').classList.add('active');
+            document.body.style.overflow = 'hidden';
+            // Close mobile menu if open
+            if (isMenuOpen) toggleMobileMenu();
+        }
+
+        function closeCart() {
+            document.getElementById('cartOverlay').classList.remove('active');
+            document.getElementById('cartSidebar').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // ==========================================
+        // CHECKOUT
+        // ==========================================
+        function openCheckout() {
+            closeCart();
+
+            const checkoutItems = document.getElementById('checkoutItems');
+            const checkoutTotal = document.getElementById('checkoutTotal');
+
+            checkoutItems.innerHTML = '';
+            let total = 0;
+
+            cart.forEach(function(item) {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+                const itemEl = document.createElement('div');
+                itemEl.className = 'checkout-item';
+                itemEl.innerHTML = '<span>' + item.name + ' x' + item.quantity + '</span><span>$' + itemTotal.toLocaleString() + '</span>';
+                checkoutItems.appendChild(itemEl);
+            });
+
+            checkoutTotal.textContent = '$' + total.toLocaleString();
+            document.getElementById('checkoutModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeCheckout() {
+            document.getElementById('checkoutModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function handleCheckout(e) {
+            e.preventDefault();
+
+            const total = cart.reduce(function(sum, item) { return sum + (item.price * item.quantity); }, 0);
+
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'purchase', {
+                    'transaction_id': 'PA-' + Date.now(),
+                    'value': total,
+                    'currency': 'USD',
+                    'items': cart.map(function(item) {
+                        return {
+                            'item_id': item.id.toString(),
+                            'item_name': item.name,
+                            'item_category': 'Arte',
+                            'price': item.price,
+                            'quantity': item.quantity
+                        };
+                    })
+                });
+            }
+
+            closeCheckout();
+            cart = [];
+            updateCartUI();
+            showToast('¡Pedido confirmado! Te contactaremos pronto.', 'success');
+        }
+
+        // ==========================================
+        // FORMULARIOS
+        // ==========================================
+        function handleContact(e) {
+            e.preventDefault();
+            showToast('Mensaje enviado correctamente. Te responderemos pronto.', 'success');
+            e.target.reset();
+        }
+
+        function handleNewsletter(e) {
+            e.preventDefault();
+            showToast('¡Gracias por suscribirte! Revisa tu correo.', 'success');
+            e.target.reset();
+        }
+
+        // ==========================================
+        // COOKIES / CONSENTIMIENTO
+        // ==========================================
+        function acceptCookies() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            document.getElementById('cookieBanner').classList.remove('show');
+            if (typeof updateConsent !== 'undefined') {
+                updateConsent(true);
+            }
+            showToast('Preferencias de cookies guardadas', 'success');
+        }
+
+        function declineCookies() {
+            localStorage.setItem('cookieConsent', 'declined');
+            document.getElementById('cookieBanner').classList.remove('show');
+            if (typeof updateConsent !== 'undefined') {
+                updateConsent(false);
+            }
+        }
+
+        // ==========================================
+        // TOAST NOTIFICATIONS
+        // ==========================================
+        function showToast(message, type) {
+            type = type || 'success';
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = 'toast toast-' + type;
+            toast.innerHTML = '<span>' + (type === 'success' ? '✅' : '❌') + '</span><span>' + message + '</span>';
+
+            container.appendChild(toast);
+
+            requestAnimationFrame(function() {
+                toast.classList.add('show');
+            });
+
+            setTimeout(function() {
+                toast.classList.remove('show');
+                setTimeout(function() { toast.remove(); }, 400);
+            }, 3000);
+        }
+
+        // ==========================================
+        // HEADER SCROLL EFFECT
+        // ==========================================
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        }, { passive: true });
+
+        // ==========================================
+        // ANIMACIONES AL SCROLL
+        // ==========================================
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(function(el) {
+            observer.observe(el);
+        });
+
+        // ==========================================
+        // INICIALIZACIÓN
+        // ==========================================
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mostrar banner de cookies
+            setTimeout(function() {
+                var consent = localStorage.getItem('cookieConsent');
+                if (!consent) {
+                    document.getElementById('cookieBanner').classList.add('show');
+                }
+            }, 2000);
+
+            // Evento del botón del carrito
+            document.getElementById('cartBtn').addEventListener('click', openCart);
+
+            // Evento del menú móvil
+            document.getElementById('mobileMenuBtn').addEventListener('click', toggleMobileMenu);
+
+            // Cerrar modales con Escape
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeCart();
+                    closeCheckout();
+                    if (isMenuOpen) toggleMobileMenu();
+                }
+            });
+
+            // Touch events for swipe to close cart (Android)
+            var cartSidebar = document.getElementById('cartSidebar');
+            var touchStartX = 0;
+
+            cartSidebar.addEventListener('touchstart', function(e) {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            cartSidebar.addEventListener('touchend', function(e) {
+                var touchEndX = e.changedTouches[0].screenX;
+                if (touchStartX - touchEndX > 100) {
+                    closeCart();
+                }
+            }, { passive: true });
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
